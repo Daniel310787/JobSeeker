@@ -1,0 +1,15 @@
+*{
+    background-color: grey;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 120px;
+    border-radius: 20px;
+}
+header i{
+    color: blue;
+}
