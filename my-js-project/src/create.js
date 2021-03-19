@@ -2,7 +2,7 @@
 
 var url = "https://jooble.org/api/";
 var key = "281e5e02-f47b-41cb-a0e7-7ea5a33f21e1";
-var params = "{ keywords: 'it', location: 'Rome'}"
+var params = "{ keywords: 'it', location: 'London'}"
 
 //create xmlHttpRequest object
 var http = new XMLHttpRequest();
