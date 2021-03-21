@@ -13,3 +13,9 @@ header{
 header i{
     color: blue;
 }
+
+#jsb_container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
