@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr .1fr .7fr .115fr;
+    grid-template-rows: 1fr .1fr .7fr .15fr;
     grid-template-areas: 
     "header header header header"
     "h1 h1 h1 h1"
@@ -117,6 +117,7 @@ body{
 .f1 h2,h3{
     font-size: 20px;
     margin-left: -30px;
+    color: white;
 }
 .footer i{
     color: black;

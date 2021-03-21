@@ -4,8 +4,7 @@ body{
   grid-template-rows: 1fr .1fr 1fr .15fr;
   grid-template-areas: 
   "header header header header"
-  "pic box  box card"
-  "map map map map"
+  "results results results results"
   "footer footer footer footer";
   margin: 0px 0px;
 }

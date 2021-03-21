@@ -4,35 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a883e6f0f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/my-js-project/assets/Login.css">
+    <title>Job Seeker LogIn</title>
 </head>
 <body>
     <header class="header">
-        <img src="images/Capture.PNG" alt="Logo" id="logo">
-    
+        <a href="#"><img src="assets/images/Capture.PNG" alt="Logo" id="logo" width="75px"></a>
+        <nav class="navs">
+            <a href="facebook.com">Log In/Sign Up</a>
+        </nav>
     </header>
-    <nav class="navs">
-  
-        <a>LogIn/SignUp</a>
-    </nav>
-    <div>
-        <p>Log in</p>
-        <br> 
-        <br> 
-        <input id="email" type="text">
-        <br>
-        <br>  
-        <input id="password" type="password"> 
-        <br>
-        <br>  
-        <input id="submit" value='Log in' type="submit"> 
-        <br> 
-        <br> 
-        <a href='SignUp.html'>Register Now</a>
-    </div>
+    <section class="main">
+        <h2>Login Form</h2>
+
+        <form action="" method="post">
+        <div class="imgcontainer">
+            <img src="/my-js-project/assets/images/login/avatar.PNG" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+            <label for="uname"><b class="label">Username</b></label>
+            <br>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <br>
+            <label for="psw"><b class="label">Password</b></label>
+            <br>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <br>
+            <br>   
+            <button type="submit" class="label">Login</button>
+            <br>
+            <br>
+            <label class="label"><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+        </div>
+    </section>
     <footer class="footer">
-        <p>Contact us</p>
+        <img src="assets/images/Capture.PNG" alt="logo">
+        <div class="f1">
+            <h2>JobSeeker</h2>
+            <h3>All Rigths Reserved</h3>
+        </div>
+        <i class="fas fa-envelope" ><a href="https://www.outlook.com" class="a-f">jobseekercoders@outlook.com</a></i>
+        <i class="fab fa-facebook-square"><a href="https://www.facebook.com" class="a-f">JobSeeker on Facebook</a></i>
+        <i class="fab fa-instagram-square"><a href="https://www.instagram.com" class="a-f">JobSeeker on Instagram</a></i>
     </footer>
-    <script src="create.js"></script>     
+        
 </body>
 </html>
