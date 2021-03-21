@@ -1,11 +1,11 @@
 body{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr .1fr 1fr .15fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: .15fr 1fr .15fr;
     grid-template-areas: 
-    "header header header header"
-    "results results results results"
-    "footer footer footer footer";
+    "header header header"
+    "main main main"
+    "footer footer footer";
     margin: 0px 0px;
 }
 
@@ -34,7 +34,53 @@ body{
     text-decoration: none;
     color: white;
 }
-
+.main{
+    grid-area: main;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+}
+.main h1{
+    font-size: 50px;
+}
+.main p{
+    font-size: 20px;
+}
+.main img{
+    width: 200px;
+}
+input[type=text], input[type=password] {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.label{
+    font-size: 20px;
+}
+#submit{
+    background-color: #487EAF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    font-size: 30px;
+}
+#cancel{
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    font-size: 30px;
+}
 .footer{
     grid-area: footer;
     display: flex;
