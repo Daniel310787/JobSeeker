@@ -1,0 +1,35 @@
+
+#logo{
+    width: 120px;
+    border-radius: 20px;
+}
+
+
+.button {
+    background-color: #487EAF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 26px;
+    float: right;
+    margin-bottom: 200px;
+   
+  }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#487EAF;
+    color: white;
+    text-align: center;
+ }
+
