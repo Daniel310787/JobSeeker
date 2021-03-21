@@ -1,21 +1,129 @@
-*{
-    background-color: grey;
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .1fr .7fr .115fr;
+    grid-template-areas: 
+    "header header header header"
+    "h1 h1 h1 h1"
+    "card card card card"
+    "footer footer footer footer";
+    margin: 0px 0px;
 }
-header{
-    display: flex;
-    justify-content: space-between;
+.header{
+    background-image: url("/my-js-project/assets/images/Index/Picture1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    grid-area: header;
+    height: 100vh;
 }
 
 #logo{
-    width: 120px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 150px;
     border-radius: 20px;
+    float: left;
+    margin: 15px 15px;
+    border-radius: 35%;
 }
-header i{
-    color: blue;
+.navs{
+  float: right;
+  background-color: #487EAF;
+  color: white;
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 25px 35px;
+  margin: 15px 15px;
 }
-
-#jsb_container{
-    display: flex;
+.navs a{
+    text-decoration: none;
+    color: white;
+}
+#title{
+    font-size: 95px;
+    color: white;
+    margin-top: 3em;
+}
+#searchbox{
     text-align: center;
-    justify-content: center;
+    padding: 10px 45px;
+    border: 1px solid black;
+    font-size: 20px;
+    border-radius: 15px;
+}
+#btn{
+    padding: 10px 10px;
+    background-color: #487EAF;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 15px 35px;
+    margin: 15px 15px;
+}
+#minititle{
+    font-size: 45px;
+    grid-area: h1;
+    text-align: center;
+}
+.card{
+    grid-area: card;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    
+}
+.pic-card{
+    margin-top: 0em;
+    border-radius: 10px;
+    background-color: #487EAF;
+    height:450px;
+    text-align: center;
+}
+.pic-card img{
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+}
+.pic-card p{
+    color: white;
+    font-size: 25px;
+}
+.pic-card a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 20px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #487EAF;
+}
+.footer img{
+    width: 150px;
+    height: 100px;
+    margin-left: -30px;
+}
+.f1 h2,h3{
+    font-size: 20px;
+    margin-left: -30px;
+}
+.footer i{
+    color: black;
+    font-size: 30px;
+}
+.a-f{
+    text-decoration: none;
+    color: white;
+    font-size: 25;
 }
