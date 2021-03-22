@@ -1,7 +1,7 @@
 body{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: .03fr .07fr 1fr .03fr;
+  grid-template-rows: .02fr .08fr 1fr .03fr;
   grid-template-areas: 
   "header header header header"
   "h1 h1 h1 h1"
