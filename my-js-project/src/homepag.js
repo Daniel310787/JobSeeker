@@ -1,12 +1,14 @@
+
+
+
 function Jobs() {
 	document.querySelectorAll("div").forEach(element => {
-    element.remove()
-    })
-    var job = document.getElementById("job").value
+		element.remove()
+	})
 	var city = document.getElementById("loc").value;
 	var url = "https://jooble.org/api/";
 	var key = "281e5e02-f47b-41cb-a0e7-7ea5a33f21e1";
-	var params = `{ title: "${job}", location: "${city}"}`
+	var params = `{ keywords: " ", location: "${city}"}`
 	var http = new XMLHttpRequest();
 	http.open("POST", url + key, true);
 	http.setRequestHeader("Content-type", "application/json");
@@ -17,11 +19,10 @@ function Jobs() {
 			result.jobs.forEach(element => {
 				console.log(element.title)
 				var div = document.createElement("div")
-                div.setAttribute("class", "cards")
-				var jobName = document.createElement("h1")
+				var jobName = document.createElement("h2")
 				jobName.innerHTML = element.title
 				div.appendChild(jobName)
-				var company = document.createElement("h2")
+				var company = document.createElement("h1")
 				div.appendChild(company)
 				company.innerHTML = element.company
 				var Description = document.createElement("p")
@@ -31,7 +32,7 @@ function Jobs() {
 				link.setAttribute("href", element.link)
 				div.appendChild(link)
 				link.innerHTML = "More Info"
-				document.getElementById("results").appendChild(div)
+				document.body.appendChild(div)
 			});
 		}
 	}
@@ -39,3 +40,4 @@ function Jobs() {
 }
 document.getElementById("btn").addEventListener("click", Jobs)
 
+export {Jobs as default};
