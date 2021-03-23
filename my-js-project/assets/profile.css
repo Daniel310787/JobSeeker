@@ -8,6 +8,8 @@ body{
     "card card card card"
     "footer footer footer footer";
     margin: 0px 0px;
+    background: linear-gradient(to left, #203647 0%,  #4DA8DA 100%,  #EEFBFB 100%,  #EEFBFB 1000%);
+   
   }
   
   .header{
@@ -24,7 +26,7 @@ body{
   }
   .navs{
     float: right;
-    background-color: #487EAF;
+    background-color: #203647;
     color: white;
     font-size: 25px;
     border-radius: 15px;
@@ -43,7 +45,11 @@ body{
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #487EAF;
+    background-color: #203647;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
   .footer img{
     width: 150px;
