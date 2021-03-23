@@ -2,11 +2,11 @@ function Jobs() {
 	document.querySelectorAll("div").forEach(element => {
     element.remove()
     })
-    var job = document.getElementById("job").value
+    var job = document.getElementById("job").value;
 	var city = document.getElementById("loc").value;
 	var url = "https://jooble.org/api/";
 	var key = "281e5e02-f47b-41cb-a0e7-7ea5a33f21e1";
-	var params = `{ title: "${job}", location: "${city}"}`
+	var params = `{ keywords: "${job}", location: "${city}"}`
 	var http = new XMLHttpRequest();
 	http.open("POST", url + key, true);
 	http.setRequestHeader("Content-type", "application/json");
