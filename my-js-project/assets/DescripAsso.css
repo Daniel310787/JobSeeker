@@ -1,10 +1,10 @@
 body{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr .1fr 1fr .15fr;
+  grid-template-rows: .5fr 1fr 1fr .15fr;
   grid-template-areas: 
   "header header header header"
-  "pic box  box card"
+  "pic card  card ratings"
   "map map map map"
   "footer footer footer footer";
   margin: 0px 0px;
@@ -35,7 +35,23 @@ body{
   text-decoration: none;
   color: white;
 }
-
+#pic{
+  grid-area: pic;
+}
+.imgdes{
+  width: 350px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+#card{
+  grid-area: card;
+}
+#ratings{
+  grid-area: ratings;
+}
+.map{
+  grid-area: map;
+}
 .footer{
   grid-area: footer;
   display: flex;
