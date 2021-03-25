@@ -40,11 +40,20 @@ window.addEventListener("load", () => {
             button.setAttribute("href", found.link)
             button.innerHTML = "Apply Now"
             document.getElementById("card").appendChild(button)
+           
+
 
         }  
     }
     http.send(params)      
 })
 
-
-
+// if(title = "it"){
+    //     var div = document.createElement("pic")
+    //     var pic = document.createElement("img")
+    //     div.appendChild(pic)
+    //     pic.setAttribute("src","./assets/images/Description/it.jpg")
+    //     pic.setAttribute("class", "img")
+    //     pic.innerHTML = "hi"
+    //     document.getElementById("pic").appendChild(div)
+    // }
