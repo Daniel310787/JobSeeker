@@ -47,6 +47,13 @@ body{
     color: white;
     margin-top: 3em;
 }
+#job{
+    text-align: center;
+    padding: 10px 45px;
+    border: 1px solid black;
+    font-size: 20px;
+    border-radius: 15px;
+}
 #loc{
     text-align: center;
     padding: 10px 45px;

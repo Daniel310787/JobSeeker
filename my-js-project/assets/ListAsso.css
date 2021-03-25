@@ -19,6 +19,7 @@ body{
   text-align: center;
   font-size: 35px;
   max-height: fit-content;
+  margin-bottom: 0px;
 }
 .h1 input{
   width: 15%;
