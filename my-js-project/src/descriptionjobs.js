@@ -6,9 +6,9 @@ var loc = urlParams.get('location')
 var title = urlParams.get('title')
 
 window.addEventListener("load", () => {
-    document.querySelectorAll("div").forEach(element => {
-    element.remove()
-    })
+    // document.querySelectorAll("div").forEach(element => {
+    // element.remove()
+    // })
     var url = "https://jooble.org/api/";
     var key = "281e5e02-f47b-41cb-a0e7-7ea5a33f21e1";
     var params = `{ keywords: "${title}", location: "${loc}"}`
@@ -57,3 +57,11 @@ window.addEventListener("load", () => {
     //     pic.innerHTML = "hi"
     //     document.getElementById("pic").appendChild(div)
     // }
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoibGVlLWpheSIsImEiOiJja21vdGY0Z2UyN2RrMm9wZjJuc2F4azc1In0.ege8aPX7dRzqx1IIBNi6yw';
+    var map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-74.5, 40], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+    })

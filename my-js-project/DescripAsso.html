@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a883e6f0f1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/my-js-project/assets/DescripAsso.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
     <title>Job Seeker Description of Jobs</title>
 </head>
 <body>
+    <div id='map' style='width: 400px; height: 300px;'></div>
+
     <header class="header">
         <a href="#"><img src="assets/images/Capture.PNG" alt="Logo" id="logo" width="75px"></a>
         <nav class="navs">
@@ -17,7 +21,7 @@
     </header>
     <section id="pic"></section>
     <section id="card"></section>
-    <section id="map"></section>
+    <!-- <section id="map"></section> -->
     <footer class="footer">
         <img src="assets/images/Capture.PNG" alt="logo">
         <div class="f1">
@@ -28,6 +32,15 @@
         <i class="fab fa-facebook-square"><a href="https://www.facebook.com" class="a-f">JobSeeker on Facebook</a></i>
         <i class="fab fa-instagram-square"><a href="https://www.instagram.com" class="a-f">JobSeeker on Instagram</a></i>
       </footer>
+      <!-- <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibGVlLWpheSIsImEiOiJja21vdGY0Z2UyN2RrMm9wZjJuc2F4azc1In0.ege8aPX7dRzqx1IIBNi6yw';
+        var map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9 // starting zoom
+        });
+        </script> -->
       <script src="/my-js-project/src/descriptionjobs.js" ></script>
 </body>
 </html>

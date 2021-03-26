@@ -52,3 +52,11 @@ function Jobs() {
 }
 
 document.getElementById("btn").addEventListener("click", Jobs)
+
+
+mapboxgl.accessToken = 'pk.eyJ1IjoibGVlLWpheSIsImEiOiJja21vdGY0Z2UyN2RrMm9wZjJuc2F4azc1In0.ege8aPX7dRzqx1IIBNi6yw';
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11'
+});
+

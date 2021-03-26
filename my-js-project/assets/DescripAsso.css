@@ -85,3 +85,7 @@ body{
   border-radius: 10px;
   margin-left: 10px;
 }
+#map {
+  height: 10vh;
+  width: 10vw;
+}
