@@ -117,7 +117,7 @@ function Jobs1() {
 				company.innerHTML =  element.company	
 				var link = document.createElement("a")
 				link.setAttribute("id","sender")
-				link.setAttribute("href", `DescripAsso.html?id=${element.id}&location=${element.location}&title=${element.title}`)	
+				link.setAttribute("href", `DJobs.html?id=${element.id}&location=${element.location}&title=${element.title}`)	
 				div.appendChild(link)
 				link.innerHTML = "More Info..."
 				document.getElementById("image").appendChild(name1)
