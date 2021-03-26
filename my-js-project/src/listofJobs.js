@@ -59,7 +59,7 @@ function Jobs() {
 				.then(data =>{
 				var lat = data.coord.lat
 				var lon = data.coord.lon
-				console.log(data.coord.lon)
+				console.log(data)
 				mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuaWVsMzEwNzg3IiwiYSI6ImNrbTRzZXR2ZzA3bHgycG93YzI1dmFyb3kifQ.av0j5J9UNRTWdRs9zXR8cg';
 				var map = new mapboxgl.Map({
 				container: "map", 
