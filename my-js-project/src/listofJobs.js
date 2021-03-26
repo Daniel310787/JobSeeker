@@ -42,15 +42,36 @@ function Jobs() {
 				company.innerHTML =  element.company	
 				var link = document.createElement("a")
 				link.setAttribute("id","sender")
-				link.setAttribute("href", `DescripAsso.html?id=${element.id}&location=${element.location}&title=${element.title}`)	
+				link.setAttribute("href", `DJobs.html?id=${element.id}&location=${element.location}&title=${element.title}`)	
 				div.appendChild(link)
 				link.innerHTML = "More Info..."
 				document.getElementById("image").appendChild(name1)
 				document.getElementById("results").appendChild(name2)
 				document.getElementById("image").appendChild(fig)
 				document.getElementById("results").appendChild(div)
+				var str = element.location;
+				var arr = str.split(',');
+				arr = arr.splice(0, arr.length - 1)
+				console.log(arr.join(','))
+				
+				fetch(`http://api.openweathermap.org/data/2.5/weather?q=${arr}&appid=a649f48c0d27ec05c0d86837b49029b1&units=metric`)
+				.then(response => response.json())  
+				.then(data =>{
+				var lat = data.coord.lat
+				var lon = data.coord.lon
+				console.log(data.coord.lon)
+				mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuaWVsMzEwNzg3IiwiYSI6ImNrbTRzZXR2ZzA3bHgycG93YzI1dmFyb3kifQ.av0j5J9UNRTWdRs9zXR8cg';
+				var map = new mapboxgl.Map({
+				container: "map", 
+				style: 'mapbox://styles/mapbox/streets-v11',
+				center: [Math.floor(lon), Math.floor(lat)],
+				zoom: 7 
+			});
+			})
 			});
 		}
+			
+		
 	}
 	http.send(params);
 }

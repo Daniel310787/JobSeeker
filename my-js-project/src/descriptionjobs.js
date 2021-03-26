@@ -74,7 +74,7 @@ function mapLoc() {
 window.addEventListener("load", mapLoc)
 
 window.addEventListener("load", () =>{
-    if(title = "it"){
+    if(title == "it"){
         var div = document.createElement("pic")
         var pic = document.createElement("img")
         div.appendChild(pic)
@@ -82,6 +82,70 @@ window.addEventListener("load", () =>{
         pic.setAttribute("class", "img")
         pic.innerHTML = "hi"
         document.getElementById("pic").appendChild(div)
-    } 
+    } else if (title == "house"){
+        var div = document.createElement("pic")
+        var pic = document.createElement("img")
+        div.appendChild(pic)
+        pic.setAttribute("src","./assets/images/Description/housekeeper.jpg")
+        pic.setAttribute("class", "img")
+        pic.innerHTML = "hi"
+        document.getElementById("pic").appendChild(div)
+    } else if ( title == "Mechanic"){
+        var div = document.createElement("pic")
+        var pic = document.createElement("img")
+        div.appendChild(pic)
+        pic.setAttribute("src","./assets/images/Description/mechanic.jpg")
+        pic.setAttribute("class", "img")
+        pic.innerHTML = "hi"
+        document.getElementById("pic").appendChild(div)
+    } else if (title == "sales") {
+        var div = document.createElement("pic")
+        var pic = document.createElement("img")
+        div.appendChild(pic)
+        pic.setAttribute("src","./assets/images/Description/sales.jpg")
+        pic.setAttribute("class", "img")
+        pic.innerHTML = "hi"
+        document.getElementById("pic").appendChild(div)
+    } else if (title == "supermarket"){
+        var div = document.createElement("pic")
+        var pic = document.createElement("img")
+        div.appendChild(pic)
+        pic.setAttribute("src","./assets/images/Description/market.jpg")
+        pic.setAttribute("class", "img")
+        pic.innerHTML = "hi"
+        document.getElementById("pic").appendChild(div)
+    } else if (title == "marketing"){
+        var div = document.createElement("pic")
+        var pic = document.createElement("img")
+        div.appendChild(pic)
+        pic.setAttribute("src","./assets/images/Description/marketing.jpeg")
+        pic.setAttribute("class", "img")
+        pic.innerHTML = "hi"
+        document.getElementById("pic").appendChild(div)
+    } else if (title == "food"){
+        var div = document.createElement("pic")
+        var pic = document.createElement("img")
+        div.appendChild(pic)
+        pic.setAttribute("src","./assets/images/Description/food.jpg")
+        pic.setAttribute("class", "img")
+        pic.innerHTML = "hi"
+        document.getElementById("pic").appendChild(div)
+    } else if (title == "call center"){
+        var div = document.createElement("pic")
+        var pic = document.createElement("img")
+        div.appendChild(pic)
+        pic.setAttribute("src","./assets/images/Description/call center.jpg")
+        pic.setAttribute("class", "img")
+        pic.innerHTML = "hi"
+        document.getElementById("pic").appendChild(div)
+    } else {
+        var div = document.createElement("pic")
+        var pic = document.createElement("img")
+        div.appendChild(pic)
+        pic.setAttribute("src","./assets/images/Description/ddddd.PNG")
+        pic.setAttribute("class", "img")
+        pic.innerHTML = "hi"
+        document.getElementById("pic").appendChild(div)
+    }
 })
 

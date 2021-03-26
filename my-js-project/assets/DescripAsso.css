@@ -93,6 +93,7 @@ body{
   height: 300px;
   border-radius: 10px;
   margin-left: 160px;
+  border: 1px solid black;
 }
 .job{
   font-size: 40px;
