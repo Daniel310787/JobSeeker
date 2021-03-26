@@ -5,50 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/my-js-project/assets/styles.css">
+  <link rel="stylesheet" href="/my-js-project/assets/searchBox.css">
   <title>Job Seeker</title>
 </head>
 <body>
   
   <header class="header">
-    <a href="#"><img src="assets/images/Capture.PNG" alt="Logo" id="logo" width="75px"></a>
+    <a href="index.html"><img src="assets/images/Capture.PNG" alt="Logo" id="logo" width="75px"></a>
     <nav class="navs">
       <a href="/my-js-project/Login.html">Log In/Sign Up</a>
-    </nav>
-    <h1 id="title">Job Seeker</h1>
-      <input type="text" name="location" id="loc" placeholder="LOCATION">
-      <input type="text" name="job" id="job" placeholder="JOB TYPE">   
-      <br>
-      <br>
-      <br>
-      <a id="btn">Search Jobs</a>
-    
+    </nav>  
   </header>
   <div id="minititle">
-    <h1>Recommended Jobs</h1>
+    <h1>Jobs in Germany</h1>
   </div>
-  <section class="card">
-    <div class="pic-card">
-      <img src="/my-js-project/assets/images/Index/images.jfif" alt="job1">
-      <p>Jobs at Germany</p>
-      <br>
-      <br>
-      <a href="./germany.html">Search Now</a>
-    </div>
-    <div class="pic-card">
-      <img src="/my-js-project/assets/images/Index/images (1).jfif" alt="job2">
-      <p>Jobs in Italy</p>
-      <br>
-      <br>
-      <a href="./italy.html">Search Now</a>
-    </div>
-    <div class="pic-card">
-      <img src="/my-js-project/assets/images/Index/blog_20190904_iStock-938516266.jpg" alt="job4">
-      <p>Jobs at Spain</p>
-      <br>
-      <br>
-      <a href="./spain.html">Search Now</a>
-    </div>
+  <section class="Search">
+        					<!-- Jooble search box -->
+	<script type="text/javascript" src="https://de.jooble.org/SearchBox" language="javascript"></script>
+	<div id="jsb_container" class="jsb_holder">
+		<a href="https://de.jooble.org/" class="cgl" rel="nofollow">Jobs, Arbeit, Stellenangebote</a>
+	</div>
+	<script type="text/javascript">
+		var searchBox = new JSearchBox('jsb_container', 0, '600', '15', '#6eb5e8',
+			'#ffffff', '#555555', '#ffffff', '#318ede', '#555555', '#3f981f',
+			'Tahoma', '12', '#b1b1b3', '', '');
+	</script>
+	<!-- Jooble search box -->
   </section>
   <footer class="footer">
     <img src="assets/images/Capture.PNG" alt="logo">
