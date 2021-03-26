@@ -115,7 +115,7 @@ body{
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
+	font: bold 18px sans-serif;
 	padding: 0px 50px;
     grid-area: footer;
     display: flex;
