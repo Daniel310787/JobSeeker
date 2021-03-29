@@ -27,6 +27,7 @@ body{
     background-color: #487EAF;
     color: white;
     font-size: 25px;
+    font-family: 'bitter','serif';
     border-radius: 15px;
     padding: 25px 35px;
     margin: 15px 15px;
@@ -43,7 +44,8 @@ body{
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font: bold 16px sans-serif;
+    font-family: 'bitter','serif';
+    font: bold 16px serif;
     padding: 0px 50px;
     display: flex;
     flex-direction: row;
@@ -76,6 +78,7 @@ body{
       display:inline-block;
       line-height: 1.8;
       font-weight:400;
+      font-family: 'bitter','serif';
       text-decoration: none;
       color:  inherit;
   }
@@ -104,6 +107,7 @@ body{
       display: inline-block;
       color: #ffffff;
       font-weight:400;
+      font-family: 'bitter','serif';
       vertical-align: middle;
       margin:0;
       font-size: 18px;
@@ -120,13 +124,15 @@ body{
       display: inline-block;
       color: #ffffff;
       font-weight:400;
+      font-family: 'bitter','serif';
       vertical-align: middle;
       margin:0;
   }
   .location h1{
       display:block;
       font-weight: 700;
-      font-size:35PX;
+      font-size:35px;
+      font-family: 'bitter','serif';
       line-height:2;
       color: white;
       margin-top: 65px;
@@ -143,11 +149,13 @@ body{
       display:block;
     font-weight: normal;
     font-size:20px;
+    font-family: 'bitter','serif';
     line-height:2;
       color: white;
   }
   .useful-links h2{
       color: white;
       font-size: 35px;
+      font-family: 'bitter','serif';
       margin-top: 35px;
   }
