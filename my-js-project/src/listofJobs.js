@@ -49,6 +49,7 @@ function Jobs() {
 				document.getElementById("results").appendChild(name2)
 				document.getElementById("image").appendChild(fig)
 				document.getElementById("results").appendChild(div)
+				
 				var str = element.location;
 				var arr = str.split(',');
 				arr = arr.splice(0, arr.length - 1)
