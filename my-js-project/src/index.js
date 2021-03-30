@@ -5,5 +5,3 @@ window.addEventListener("click" , () =>{
     var btn = document.getElementById("btn")
  	btn.setAttribute("href", `./ListJobs.html?location=${loc}&job=${job}`)
 })
-
-

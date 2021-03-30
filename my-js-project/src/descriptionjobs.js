@@ -56,19 +56,18 @@ function mapLoc() {
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${arr}&appid=a649f48c0d27ec05c0d86837b49029b1&units=metric`)
     .then(response => response.json())  
     .then(data =>{
-    console.log(data)
-    console.log(data.coord.lat)
-    console.log(data.coord.lon)
-    var lat = data.coord.lat
-    var lon = data.coord.lon
-    
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuaWVsMzEwNzg3IiwiYSI6ImNrbTRzZXR2ZzA3bHgycG93YzI1dmFyb3kifQ.av0j5J9UNRTWdRs9zXR8cg';
-    var map = new mapboxgl.Map({
-        container: "map", 
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [Math.floor(lon), Math.floor(lat)],
-        zoom: 7 
-    });
+        var lat = data.coord.lat
+        var lon = data.coord.lon
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuaWVsMzEwNzg3IiwiYSI6ImNrbTRzZXR2ZzA3bHgycG93YzI1dmFyb3kifQ.av0j5J9UNRTWdRs9zXR8cg';
+        var map = new mapboxgl.Map({
+            container: "map", 
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [Math.floor(lon), Math.floor(lat)],
+            zoom: 7 
+        });
+        var marker = new mapboxgl.Marker()
+        .setLngLat([Math.floor(lon), Math.floor(lat)])
+        .addTo(map);
     })
 }
 window.addEventListener("load", mapLoc)
