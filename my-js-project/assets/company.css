@@ -27,8 +27,10 @@ body{
     color: white;
     font-size: 25px;
     border-radius: 15px;
-    margin: 35px 15px;
-   
+    padding: 25px 35px;
+    margin: 15px 15px;
+    font-family: 'bitter','serif';
+  
 }
 .navs a{
     text-decoration: none;
@@ -38,6 +40,7 @@ body{
     padding: 15px 20px;
     border-radius: 15px;
 }
+
 .title{
     grid-area: title;
     text-align: center;

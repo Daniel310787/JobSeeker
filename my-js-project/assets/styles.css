@@ -31,7 +31,6 @@ body{
 }
 .navs{
   float: right;
-  
   color: white;
   font-size: 25px;
   border-radius: 15px;
@@ -104,7 +103,7 @@ body{
   }
   
   
-  .card{
+.card{
     grid-area: card;
     display: flex;
     flex-direction: row;
@@ -114,11 +113,11 @@ body{
     
 }
 .card :hover a{
-    background-color: #487EAF;
+    background-color: black;
     transition-delay: 0.2s;
     opacity: 0.7s;
-    transform: translateY(0) scale(2);
-    border: 10px solid black;
+    border: 1px solid black;
+    color: white;
 }
 
 .pic-card{
