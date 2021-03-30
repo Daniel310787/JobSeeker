@@ -3,6 +3,7 @@ var urlParams = new URLSearchParams(window.location.search);
 var locs = urlParams.get('location');
 var jobs = urlParams.get('job')
 
+	
 function Jobs() {
 	document.querySelectorAll("div").forEach(element => {
     element.remove()
@@ -32,13 +33,13 @@ function Jobs() {
 					var str = element.location
 					var arr = str.split(',')	
 					arr = arr.splice(0,1)
-					console.log(arr)
+					// console.log(arr)
 					fetch(`http://api.openweathermap.org/data/2.5/weather?q=${arr}&appid=a649f48c0d27ec05c0d86837b49029b1&units=metric`)
 					.then(response => response.json())  
 					.then(data => {
 						var lat = data.coord.lat
 						var lon = data.coord.lon
-						console.log(data)
+						// console.log(data)
 						var marker = new mapboxgl.Marker()
 						.setLngLat([Math.floor(lon), Math.floor(lat)])
 						.addTo(map);
@@ -72,8 +73,6 @@ function Jobs() {
 	}
 	http.send(params);
 }
-
-
 
 
 window.addEventListener("load", Jobs)

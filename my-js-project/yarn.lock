@@ -1761,7 +1761,7 @@
     "pify" "^2.0.0"
     "pinkie-promise" "^2.0.0"
 
-"graceful-fs@^4.1.11", "graceful-fs@^4.1.15", "graceful-fs@^4.1.2":
+"graceful-fs@^4.1.11", "graceful-fs@^4.1.15", "graceful-fs@^4.1.2", "graceful-fs@^4.1.3":
   "resolved" "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.1.15.tgz"
   "version" "4.1.15"
 
@@ -2369,7 +2369,7 @@
     "p-locate" "^3.0.0"
     "path-exists" "^3.0.0"
 
-"lodash@^4.17.10", "lodash@^4.17.11", "lodash@^4.17.14", "lodash@^4.17.4", "lodash@^4.17.5":
+"lodash@^4.17.10", "lodash@^4.17.11", "lodash@^4.17.14", "lodash@^4.17.4", "lodash@^4.17.5", "lodash@4":
   "integrity" "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
   "resolved" "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
   "version" "4.17.21"
@@ -2378,6 +2378,17 @@
   "integrity" "sha512-Hesni4s5UkWkwCGJMQGAh71PaLUmKFM60dHvq0zi/vDhhrzuk+4GgNbTXJ12YYQJn6ZKBDNIjYcuQGKudvqrIw=="
   "resolved" "https://registry.npmjs.org/loglevel/-/loglevel-1.7.1.tgz"
   "version" "1.7.1"
+
+"lowdb@^1.0.0":
+  "integrity" "sha512-2+x8esE/Wb9SQ1F9IHaYWfsC9FIecLOPrK4g17FGEayjUWH172H6nwicRovGvSE2CPZouc2MCIqCI7h9d+GftQ=="
+  "resolved" "https://registry.npmjs.org/lowdb/-/lowdb-1.0.0.tgz"
+  "version" "1.0.0"
+  dependencies:
+    "graceful-fs" "^4.1.3"
+    "is-promise" "^2.1.0"
+    "lodash" "4"
+    "pify" "^3.0.0"
+    "steno" "^0.4.1"
 
 "lru-cache@^5.1.1":
   "integrity" "sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w=="
@@ -2963,6 +2974,7 @@
   "version" "2.3.0"
 
 "pify@^3.0.0":
+  "integrity" "sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY="
   "resolved" "https://registry.npmjs.org/pify/-/pify-3.0.0.tgz"
   "version" "3.0.0"
 
@@ -3646,6 +3658,13 @@
   "integrity" "sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow="
   "resolved" "https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz"
   "version" "1.5.0"
+
+"steno@^0.4.1":
+  "integrity" "sha1-BxEFvfwobmYVwEA8J+nXtdy4Vcs="
+  "resolved" "https://registry.npmjs.org/steno/-/steno-0.4.4.tgz"
+  "version" "0.4.4"
+  dependencies:
+    "graceful-fs" "^4.1.3"
 
 "stream-browserify@^2.0.1":
   "integrity" "sha512-nX6hmklHs/gr2FuxYDltq8fJA1GDlxKQCz8O/IM4atRqBH8OORmBNgfvW5gG10GT/qQ9u0CzIvr2X5Pkt6ntqg=="

@@ -105,7 +105,7 @@ body{
   font-size: 25px;
   font-family: 'bitter','serif';
 
-
+}
 #map{
   grid-area: map;
   width: 730px;
@@ -123,6 +123,7 @@ body{
   height: 100vh;
   box-sizing: border-box;
 }
+
 .footer {
   grid-area: footer;
 	background: #487EAF;

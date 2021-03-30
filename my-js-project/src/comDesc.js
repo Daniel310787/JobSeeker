@@ -7,42 +7,43 @@ var desc = urlParams.get('desc')
 var link = urlParams.get('link')
 var loc = urlParams.get('loc')
 console.log(title)
+function createCompany() {
+    var div = document.getElementById("desc")
+    var position = document.createElement("h1")
+    div.appendChild(position)
+    position.innerHTML = "Position: " +title
+    var companyName = document.createElement("h1")
+    div.appendChild(companyName)
+    companyName.innerHTML = "Company: " +company
+    var place = document.createElement("h1")
+    div.appendChild(place)
+    place.innerHTML = "Location: "+loc
+    var info = document.createElement("h1")
+    div.appendChild(info)
+    info.innerHTML = "Description: " +desc
+    var apply = document.createElement("a")
+    apply.setAttribute("href",link)
+    div.appendChild(apply)
+    apply.innerHTML = "Apply Now"
+    
+}
+
 function getCompany(){
     var users = {
-    "id": id,
-    "title": title,
-    "company": company,
-    "link": link,   
-    "loc": loc,
-    "desc": desc,
+        "id": Math.floor(id),
+        "title": title,
+        "company": company,
+        "link": link,   
+        "loc": loc,
+        "desc": desc,
     }
     var json = JSON.stringify(users)
-    fetch("http://localhost:3000/users",{
+    fetch('http://localhost:3000/users',{
     method: "POST",
     headers: { 'Content-Type': 'application/json' },
     body: json
     })
     .then(response => console.log(response))
-}
-console.log(title)
-function createCompany() {
-    var desc = document.getElementById("desc")
-    var title = document.createElement("h1")
-    desc.appendChild(title)
-    title.innerHTML = "Position: " +title
-    var company = document.createElement("h2")
-    desc.appendChild(company)
-    company.innerHTML = "Company: " +company
-    var loc = document.createElement("h3")
-    desc.appendChild(loc)
-    loc.innerHTML = "Location: "+loc
-    var link = document.createElement("a")
-    link.setAttribute("href",link)
-    desc.appendChild(link)
-    loc.innerHTML = "Location: "+link
-    var desc = document.createElement("p")
-    desc.appendChild(desc)
-    loc.innerHTML = desc
 }
 
 window.addEventListener("load", getCompany)

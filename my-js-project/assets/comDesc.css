@@ -1,12 +1,11 @@
 body{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr .5fr;
-    grid-template-rows: .15fr 1fr 1fr .15fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .15fr 1fr .01fr;
     grid-template-areas: 
-    "header header header header"
-    "pic desc desc img"
-    "card card card card"
-    "footer footer footer footer";
+    "header header header"
+    "desc desc desc"
+    "footer footer footer";
     margin: 0px 0px;
   }
   
@@ -40,22 +39,21 @@ body{
     background: #487EAF;
     color: white;
     border-radius: 35px;
-    margin-left: 45px;
-    padding-top: 0px;
-    margin-right: 50px;
+    margin: 25px 250px;
+    padding: 50px 50px;   
     line-height: 65px ;
   }
   #desc h1{
-    margin-left: 35px;
+    margin-left: 0px;
   }
-  #pic{
-    grid-area: pic;
+  #desc a{
+    background-color: white;
+    color: black;
+    padding: 1px 10px;
+    float: right;
+    border-radius: 10px;
   }
-  #pic img{
-    width: 350px;
-    border-radius: 35px;
-    margin-left: 180px;
-  }
+  
   .footer {
     grid-area: footer;
     background: #487EAF;
