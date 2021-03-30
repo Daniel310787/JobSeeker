@@ -6,32 +6,33 @@ var id = urlParams.get('id')
 var desc = urlParams.get('desc')
 var link = urlParams.get('link')
 var loc = urlParams.get('loc')
-
+console.log(title)
 function getCompany(){
-    var companies = {
+    var users = {
     "id": id,
     "title": title,
     "company": company,
-    "link": link,
+    "link": link,   
     "loc": loc,
     "desc": desc,
     }
-    var json = JSON.stringify(companies)
-    fetch("http://localhost:3000/companies",{
+    var json = JSON.stringify(users)
+    fetch("http://localhost:3000/users",{
     method: "POST",
     headers: { 'Content-Type': 'application/json' },
     body: json
     })
     .then(response => console.log(response))
 }
+console.log(title)
 function createCompany() {
     var desc = document.getElementById("desc")
     var title = document.createElement("h1")
     desc.appendChild(title)
-    user.innerHTML = "Position: " +title
+    title.innerHTML = "Position: " +title
     var company = document.createElement("h2")
     desc.appendChild(company)
-    mail.innerHTML = "Company: " +company
+    company.innerHTML = "Company: " +company
     var loc = document.createElement("h3")
     desc.appendChild(loc)
     loc.innerHTML = "Location: "+loc
