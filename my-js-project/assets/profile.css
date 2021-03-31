@@ -1,11 +1,10 @@
 body{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr .15fr;
+  grid-template-rows: .2fr 1fr .15fr;
   grid-template-areas: 
   "header header header header"
   "pic desc desc desc"
-  "card card card card"
   "footer footer footer footer";
   margin: 0px 0px;
 }
@@ -40,7 +39,49 @@ body{
   padding: 15px 20px;
   border-radius: 15px;
 }
-
+.navs a:hover{
+  background-color: white;
+  color: #487EAF;
+  border: 2px solid black;
+}
+#desc{
+  grid-area: desc;
+  background: #487EAF;
+  color: white;
+  border-radius: 35px;
+  margin: 35px 35px;
+  padding: 50px 50px;   
+  line-height: 65px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#desc:hover{
+  box-shadow: 0 40px 130px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  background-color: #5692ca
+  
+}
+#desc h1{
+  font-size: 36px;
+  
+}
+#pic{
+  grid-area: pic;
+  margin-left: 35px;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+#pic img:hover{
+  box-shadow: 0 40px 130px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  background-color: transparent;
+}
+#pic img{
+  border-radius: 20px;
+}
 .footer {
   grid-area: footer;
   background: #487EAF;
@@ -67,9 +108,6 @@ body{
   margin-left: -100px;
 
 }
-
-
-
     /* Footer links */
 
 .footer-links{

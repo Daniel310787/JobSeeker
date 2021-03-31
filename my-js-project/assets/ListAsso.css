@@ -21,15 +21,25 @@ body{
   border-radius: 10px;
   margin-top: 40px;
 }
+
 .header button{
   padding: 10px;
   border-radius: 10px;
   background-color: #487EAF;
   color: white;
 }
+.header button:hover{
+  background-color: white;
+}
+#loop{
+  color:white;
+  margin-right: 0px;
+}
+#loop:hover{
+  color: #487EAF
+}
 #loc{
   margin-left: 20em;
-
 }
 .h1{
   grid-area: h1;
@@ -43,20 +53,6 @@ body{
   margin: 0px 0px;
 }
 
-#btn{
-  width: 20%;
-  padding: 10px 10px;
-  border-radius: 10px;
-  background-color: #487EAF;
-  color: white;
-  font-family: 'bitter','serif';
-  font-size: 25px;
-  
-}
-#loop{
-  color:white;
-  margin-right: 0px;
-}
 #logo{
   background-color: rgba(0, 0, 0, 0.1);
   width: 150px;
@@ -83,6 +79,11 @@ body{
   padding: 15px 20px;
   border-radius: 15px;
 }
+.navs a:hover{
+  background-color: white;
+  color: #487EAF;
+  border: 2px solid black;
+}
 #results{
   grid-area: results;
   max-height: fit-content;
@@ -94,21 +95,26 @@ body{
   background-color: #487EAF;
   color: white;
   padding: 55px 35px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   border-radius: 10px;
   height: 200px;
   
 }
 .cards:hover{
-  box-shadow: 20px 20px 60px #487EAF;
+  box-shadow: 0 40px 130px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  background-color: #5692ca
 }
 .cards a{
   border-radius: 10px;
   padding: 10px 10px;
   color: white;
   float: right;
-  font-size: 25px ;
-  
+  font-size: 25px ; 
+}
+.cards a:hover{
+  color: red
 }
 .cards h1{
   font-size: 35px;
@@ -127,7 +133,6 @@ body{
 .caption{
   font-size: 25px;
   font-family: 'bitter','serif';
-
 }
 #map{
   grid-area: map;
@@ -138,7 +143,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  margin-left: 15px;
+  margin-left: 20px;
   margin-top: 0px;
   border-radius: 10px;
   position: sticky;

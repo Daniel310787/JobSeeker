@@ -40,6 +40,11 @@ body{
     padding: 15px 20px;
     border-radius: 15px;
 }
+.navs a:hover{
+    color: #487EAF;
+    background-color: white;
+    border:  2px solid black;
+}
 .main{
     grid-area: main;
     text-align: center;
@@ -66,6 +71,7 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
     font-family: 'bitter','serif';
+    border-radius: 10px;
 }
 .label{
     font-size: 20px;
@@ -82,7 +88,11 @@ input[type=text], input[type=password] {
     font-size: 30px;
     font-family: 'bitter','serif';
     border-radius: 10px;
-
+}
+#submit:hover{
+    background-color: white;
+    color: #487EAF;
+    border: 2px solid black;
 }
 #cancel{
     background-color: red;
@@ -95,6 +105,11 @@ input[type=text], input[type=password] {
     font-family: 'bitter','serif';
     font-size: 30px;
     border-radius: 10px;
+}
+#cancel:hover{
+    background-color: white;
+    color: red;
+    border: 2px solid black;
 }
 .footer {
     grid-area: footer;

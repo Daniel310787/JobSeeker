@@ -40,6 +40,11 @@ body{
   padding: 15px 20px;
   border-radius: 15px;
 }
+.navs a:hover{
+  background-color: white;
+  color: #487EAF;
+  border: 2px solid black;
+}
 #pic{
   grid-area: pic;
 }
@@ -103,7 +108,11 @@ body{
   padding: 10px 20px;
   border-radius: 10px;
   font-size: 20px;
-  
+}
+.link:hover{
+  background-color: white;
+  color: #487EAF;
+  border: 2px solid black;
 }
 h1.job{
   margin-top: 0px;

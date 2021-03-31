@@ -39,6 +39,11 @@ body{
     padding: 15px 20px;
     border-radius: 15px;
 }
+.navs a:hover{
+    background-color: white;
+    color: #487EAF;
+    border: 2px solid black;
+}
 .main{
   grid-area: main;
   text-align: center;
@@ -60,6 +65,7 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 .label{
     font-size: 20px;
@@ -78,11 +84,16 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 25%;
+    width: 15%;
     font-family: 'bitter','serif';
     font-size: 30px;
+    border-radius: 15px;
 }
-
+button:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: #487EAF;
+}
 .footer {
     grid-area: footer;
     background: #487EAF;

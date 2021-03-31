@@ -40,7 +40,11 @@ body{
     padding: 15px 20px;
     border-radius: 15px;
 }
-
+.navs a:hover{
+    color: #487EAF;
+    border: 2px solid black;
+    background-color: white;
+}
 .title{
     grid-area: title;
     text-align: center;
@@ -68,6 +72,7 @@ input[type=text] {
     border: 1px solid black;
     box-sizing: border-box;
     text-align: center;
+    border-radius: 10px;
 }
 textarea{
     width: 35%;
@@ -78,6 +83,7 @@ textarea{
     border: 1px solid black;
     box-sizing: border-box;
     text-align: center;
+    border-radius: 10px;
 }
 
 .label{
@@ -94,6 +100,11 @@ textarea{
     font-size: 30px;
     border-radius: 10px;
 }
+.main a:hover{
+    background-color: white;
+    color: #487EAF;
+    border: 2px solid black;
+}
 .footer {
     grid-area: footer;
     background: #487EAF;
@@ -109,105 +120,105 @@ textarea{
     justify-content: space-between;
     align-items: center;
     height: fit-content;
-  }
-  
-     /* The company logo */
-  
-  .footer img{
-      width: 150px;
-      height: 100px;
-      margin-left: -100px;
-  
-  }
-  
-  
-  
-     /* Footer links */
-  
-  .footer-links{
-      color:  #ffffff;
-      margin: 20px 0 12px;
-      padding: 0;
-  }
-  
-  .footer-links a{
-      display:inline-block;
-      line-height: 1.8;
-      font-weight:400;
-      text-decoration: none;
-      color:  inherit;
-  }
-  
-  
-  
-  .footer-links i{
-      background-color:  #33383b;
-      color: #ffffff;
-      font-size: 25px;
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 42px;
-      margin: 10px 15px;
-      vertical-align: middle;
-  }
-  
-  .footer-links i.fa-envelope{
-      font-size: 17px;
-      line-height: 38px;
-  }
-  
-  .footer-links p{
-      display: inline-block;
-      color: #ffffff;
-      font-weight:400;
-      vertical-align: middle;
-      margin:0;
-      font-size: 18px;
-  }
-  
-  
-  .footer-links p a{
-      color:  white;
-      text-decoration: none;;
-  }
-  
-  
-  .location{
-      display: inline-block;
-      color: #ffffff;
-      font-weight:400;
-      vertical-align: middle;
-      margin:0;
-  }
-  .location h1{
-      display:block;
-      font-weight: 700;
-      font-size:35PX;
-      line-height:2;
-      color: white;
-      margin-top: 65px;
-  }
-  .location i{
-      color: #33383b;
-      width: 20px;
-      height: 20px;
-      line-height: 42px;
-      vertical-align: middle;
-  }
-  
-  .useful-links a{
-      display:block;
-      font-weight: normal;
-      font-size:20px;
-      line-height:2;
-      color: white;
-  }
-  .useful-links h2{
-      color: white;
-      font-size: 35px;
-      margin-top: 35px;
+}
+
+    /* The company logo */
+
+.footer img{
+    width: 150px;
+    height: 100px;
+    margin-left: -100px;
+
+}
+
+
+
+    /* Footer links */
+
+.footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+}
+
+
+
+.footer-links i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-links i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-links p{
+    display: inline-block;
+    color: #ffffff;
+    font-weight:400;
+    vertical-align: middle;
+    margin:0;
+    font-size: 18px;
+}
+
+
+.footer-links p a{
+    color:  white;
+    text-decoration: none;;
+}
+
+
+.location{
+    display: inline-block;
+    color: #ffffff;
+    font-weight:400;
+    vertical-align: middle;
+    margin:0;
+}
+.location h1{
+    display:block;
+    font-weight: 700;
+    font-size:35PX;
+    line-height:2;
+    color: white;
+    margin-top: 65px;
+}
+.location i{
+    color: #33383b;
+    width: 20px;
+    height: 20px;
+    line-height: 42px;
+    vertical-align: middle;
+}
+
+.useful-links a{
+    display:block;
+    font-weight: normal;
+    font-size:20px;
+    line-height:2;
+    color: white;
+}
+.useful-links h2{
+    color: white;
+    font-size: 35px;
+    margin-top: 35px;
   }
 #reg{
     font-size: 20px;
