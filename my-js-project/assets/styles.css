@@ -159,7 +159,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: fit-content
 
@@ -273,4 +273,15 @@ body{
     font-family: 'bitter',serif;
     color: white;
 
+}
+.logo1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+}
+.logo1 h1{
+    padding: 0px 0px;
+    color: white;
 }

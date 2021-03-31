@@ -46,7 +46,10 @@ function Jobs() {
 					})
 				})	
 				result.jobs.forEach(element => {
-					
+					var placeholder1 = document.getElementById("loc")
+					placeholder1.setAttribute("placeholder",locs)
+					var placeholder2 = document.getElementById("job")
+					placeholder2.setAttribute("placeholder", jobs)
 					var div = document.createElement("div")
 					div.setAttribute("class", "cards")
 					var jobName = document.createElement("h1")
@@ -151,4 +154,4 @@ function Jobs1() {
 
 }
 
-document.getElementById("btn").addEventListener("click", Jobs1)
+document.getElementById("loop").addEventListener("click", Jobs1)
