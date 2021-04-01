@@ -127,7 +127,6 @@ input[type=text], input[type=password] {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    height: fit-content;
 }
 /* The message box is shown when the user clicks on the password field */
 #message {
