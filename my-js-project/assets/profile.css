@@ -44,6 +44,20 @@ body{
   color: #487EAF;
   border: 2px solid black;
 }
+#logout{
+  text-decoration: none;
+  color: white;
+  margin: 10px 10px;
+  background-color: red;
+  padding: 15px 20px;
+  border-radius: 15px;
+}
+#logout:hover{
+  background-color: white;
+  color: red;
+  border: 2px solid black;
+}
+
 #desc{
   grid-area: desc;
   background: #487EAF;
@@ -211,4 +225,7 @@ body{
 .logo1 h1{
   padding: 0px 0px;
   color: white;
+}
+*{
+  font-family: 'Bitter','Serif';
 }

@@ -22,7 +22,7 @@ body{
 }
 
 #logo{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: white;
     width: 150px;
     border-radius: 20px;
     float: left;
@@ -30,7 +30,7 @@ body{
     border-radius: 35%;
 }
 #logo:hover{
-    background-color: white;
+    background-color: transparent;
 }
 .navs{
   float: right;
