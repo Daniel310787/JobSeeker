@@ -98,13 +98,13 @@ body{
   margin-bottom: 30px;
   border-radius: 10px;
   height: 200px;
+  border: 10px solid #203647;
   
 }
 .cards:hover{
   box-shadow: 0 40px 130px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
   background-color: #5692ca
+  
 }
 .cards a{
   border-radius: 10px;
@@ -167,10 +167,8 @@ body{
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  height: fit-content;
   position: sticky;
   top: 0;
-  height: 65vh;
   
 }
 
