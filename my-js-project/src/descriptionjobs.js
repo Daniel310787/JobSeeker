@@ -72,79 +72,18 @@ function mapLoc() {
 }
 window.addEventListener("load", mapLoc)
 
-window.addEventListener("load", () =>{
-    if(title == "it"){
+window.onload = ()=>{
+    fetch(`https://pixabay.com/api/?key=20828182-6a47e4ad98a805c77a0812254&q=${title}&image_type=photo&pretty=true`)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+        console.log(data.hits[0].largeImageURL)
         var div = document.createElement("pic")
         var pic = document.createElement("img")
         div.appendChild(pic)
-        pic.setAttribute("src","./assets/images/Description/it.jpg")
+        pic.setAttribute("src", data.hits[0].largeImageURL )
         pic.setAttribute("class", "img")
         pic.innerHTML = "hi"
         document.getElementById("pic").appendChild(div)
-    } else if (title == "house"){
-        var div = document.createElement("pic")
-        var pic = document.createElement("img")
-        div.appendChild(pic)
-        pic.setAttribute("src","./assets/images/Description/housekeeper.jpg")
-        pic.setAttribute("class", "img")
-        pic.innerHTML = "hi"
-        document.getElementById("pic").appendChild(div)
-    } else if ( title == "Mechanic"){
-        var div = document.createElement("pic")
-        var pic = document.createElement("img")
-        div.appendChild(pic)
-        pic.setAttribute("src","./assets/images/Description/mechanic.jpg")
-        pic.setAttribute("class", "img")
-        pic.innerHTML = "hi"
-        document.getElementById("pic").appendChild(div)
-    } else if (title == "sales") {
-        var div = document.createElement("pic")
-        var pic = document.createElement("img")
-        div.appendChild(pic)
-        pic.setAttribute("src","./assets/images/Description/sales.jpg")
-        pic.setAttribute("class", "img")
-        pic.innerHTML = "hi"
-        document.getElementById("pic").appendChild(div)
-    } else if (title == "supermarket"){
-        var div = document.createElement("pic")
-        var pic = document.createElement("img")
-        div.appendChild(pic)
-        pic.setAttribute("src","./assets/images/Description/market.jpg")
-        pic.setAttribute("class", "img")
-        pic.innerHTML = "hi"
-        document.getElementById("pic").appendChild(div)
-    } else if (title == "marketing"){
-        var div = document.createElement("pic")
-        var pic = document.createElement("img")
-        div.appendChild(pic)
-        pic.setAttribute("src","./assets/images/Description/marketing.jpeg")
-        pic.setAttribute("class", "img")
-        pic.innerHTML = "hi"
-        document.getElementById("pic").appendChild(div)
-    } else if (title == "food"){
-        var div = document.createElement("pic")
-        var pic = document.createElement("img")
-        div.appendChild(pic)
-        pic.setAttribute("src","./assets/images/Description/food.jpg")
-        pic.setAttribute("class", "img")
-        pic.innerHTML = "hi"
-        document.getElementById("pic").appendChild(div)
-    } else if (title == "call center"){
-        var div = document.createElement("pic")
-        var pic = document.createElement("img")
-        div.appendChild(pic)
-        pic.setAttribute("src","./assets/images/Description/call center.jpg")
-        pic.setAttribute("class", "img")
-        pic.innerHTML = "hi"
-        document.getElementById("pic").appendChild(div)
-    } else {
-        var div = document.createElement("pic")
-        var pic = document.createElement("img")
-        div.appendChild(pic)
-        pic.setAttribute("src","./assets/images/Description/ddddd.PNG")
-        pic.setAttribute("class", "img")
-        pic.innerHTML = "hi"
-        document.getElementById("pic").appendChild(div)
-    }
-})
-
+    })
+}

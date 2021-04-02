@@ -3,10 +3,26 @@
     {
       "id": 1,
       "title": "Web Developer",
-      "company": "Google",
+      "company": "JobSeeker Inc",
       "link": "google.com",
-      "loc": "New York",
-      "desc": "We need someone like you to understand our bussines"
+      "loc": "Milano",
+      "desc": "The role is responsible for designing, coding and modifying websites, from layout to function and according to a client's specifications. Strive to create visually appealing sites that feature user-friendly design and clear navigation."
+    },
+    {
+      "id": 1,
+      "title": "Web Developer",
+      "company": "JobSeeker Inc",
+      "link": "google.com",
+      "loc": "Milano",
+      "desc": "The role is responsible for designing, coding and modifying websites, from layout to function and according to a client's specifications. Strive to create visually appealing sites that feature user-friendly design and clear navigation."
+    },
+    {
+      "id": 1,
+      "title": "Web Developer",
+      "company": "JobSeeker Inc",
+      "link": "google.com",
+      "loc": "Milano",
+      "desc": "The role is responsible for designing, coding and modifying websites, from layout to function and according to a client's specifications. Strive to create visually appealing sites that feature user-friendly design and clear navigation."
     }
   ]
 }

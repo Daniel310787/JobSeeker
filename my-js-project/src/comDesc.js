@@ -6,7 +6,7 @@ var id = urlParams.get('id')
 var desc = urlParams.get('desc')
 var link = urlParams.get('link')
 var loc = urlParams.get('loc')
-console.log(title)
+
 function createCompany() {
     var div = document.getElementById("desc")
     var position = document.createElement("h1")

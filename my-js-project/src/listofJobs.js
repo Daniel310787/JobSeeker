@@ -3,7 +3,7 @@ var urlParams = new URLSearchParams(window.location.search);
 var locs = urlParams.get('location');
 var jobs = urlParams.get('job')
 
-	
+
 function Jobs() {
 	document.querySelectorAll("div").forEach(element => {
     element.remove()
@@ -155,3 +155,4 @@ function Jobs1() {
 }
 
 document.getElementById("loop").addEventListener("click", Jobs1)
+

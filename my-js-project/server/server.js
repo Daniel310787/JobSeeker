@@ -22,7 +22,7 @@ db.defaults({ users: [] })
 .write()
 
 app.get('/users', (req, res) => {
-    const data = db.get('users') //we are reading the users
+    const data = db.get("users") //we are reading the users
     res.send(data)
 })
  
