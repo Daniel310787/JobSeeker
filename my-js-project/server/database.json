@@ -23,6 +23,70 @@
       "link": "google.com",
       "loc": "Milano",
       "desc": "The role is responsible for designing, coding and modifying websites, from layout to function and according to a client's specifications. Strive to create visually appealing sites that feature user-friendly design and clear navigation."
+    },
+    {
+      "id": 1,
+      "title": "Developer",
+      "company": "Job Seeker",
+      "link": "google.com/careers",
+      "loc": "Milano",
+      "desc": "        We need you"
+    },
+    {
+      "id": 1,
+      "title": "Developer",
+      "company": "Job Seeker",
+      "link": "google.com/careers",
+      "loc": "Milano",
+      "desc": "        We need you"
+    },
+    {
+      "id": "1",
+      "Username": "Marco Cerchi",
+      "email": "alexanderalvarado310787@gmail.com",
+      "password": "Adelita20020202"
+    },
+    {
+      "id": "1",
+      "Username": "Marco Cerchi",
+      "email": "alexanderalvarado310787@gmail.com",
+      "password": "Adelita20020202"
+    },
+    {
+      "id": "1",
+      "Username": "Marco Cerchi",
+      "email": "alexanderalvarado310787@gmail.com",
+      "password": "Adelita20020202"
+    },
+    {
+      "id": "1",
+      "Username": "Marco Cerchi",
+      "email": "alexanderalvarado310787@gmail.com",
+      "password": "Adelita20020202"
+    },
+    {
+      "id": "1",
+      "Username": "Marco Cerchi",
+      "email": "alexanderalvarado310787@gmail.com",
+      "password": "Adelita20020202"
+    },
+    {
+      "id": "1",
+      "Username": "Marco Cerchi",
+      "email": "alexanderalvarado310787@gmail.com",
+      "password": "Adelita20020202"
+    },
+    {
+      "id": "1",
+      "Username": "Daniel Alvarado",
+      "email": "daniel310787@hotmail.com",
+      "password": "Adelita20020202"
+    },
+    {
+      "id": "1",
+      "Username": "Daniel Alvarado",
+      "email": "daniel310787@hotmail.com",
+      "password": "Adelita20020202"
     }
   ]
 }

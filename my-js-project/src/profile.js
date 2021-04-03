@@ -13,7 +13,7 @@ function getUser(){
     "password": psw
     }
     var json = JSON.stringify(users)
-    fetch("http://localhost:3000/users",{
+    fetch("https://localhost:3000/users",{
     method: "POST",
     headers: { 'Content-Type': 'application/json' },
     body: json
@@ -24,7 +24,7 @@ function createUser() {
     var picture = document.getElementById("pic")
     var desc = document.getElementById("desc")
     var pic = document.createElement("img")
-    pic.setAttribute("src", "./assets/images/profile/marco.jfif")
+    pic.setAttribute("src", "./assets/images/profile/Rawah.jpg")
     picture.appendChild(pic)
     var user = document.createElement("h1")
     desc.appendChild(user)
@@ -34,7 +34,7 @@ function createUser() {
     mail.innerHTML = "Email Address: " +email
     var loc = document.createElement("h1")
     desc.appendChild(loc)
-    loc.innerHTML = "Location: Bologna"
+    loc.innerHTML = "Location: Milano"
 }
 
 window.addEventListener("load", getUser)

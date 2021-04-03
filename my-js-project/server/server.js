@@ -13,16 +13,11 @@ const FileSync = require('lowdb/adapters/FileSync')
 const adapter = new FileSync('database.json')
 const db = low(adapter)
 
-app.get('/users', (req, res) => {
-    res.send('users')
-})
-db.get('users')   
-
 db.defaults({ users: [] })
 .write()
 
 app.get('/users', (req, res) => {
-    const data = db.get("users") //we are reading the users
+    const data = db.get('users') //we are reading the users
     res.send(data)
 })
  

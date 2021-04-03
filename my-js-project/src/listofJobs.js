@@ -17,7 +17,7 @@ function Jobs() {
 	http.onreadystatechange = function() {
 		if(http.readyState == 4 && http.status == 200) {
 			var result = JSON.parse(http.responseText)
-			fetch(`http://api.openweathermap.org/data/2.5/weather?q=${locs}&appid=a649f48c0d27ec05c0d86837b49029b1&units=metric`)
+			fetch(`https://api.openweathermap.org/data/2.5/weather?q=${locs}&appid=a649f48c0d27ec05c0d86837b49029b1&units=metric`)
 			.then(response => response.json())  
 			.then(data => {
 				var lat = data.coord.lat
@@ -34,7 +34,7 @@ function Jobs() {
 					var arr = str.split(',')	
 					arr = arr.splice(0,1)
 					// console.log(arr)
-					fetch(`http://api.openweathermap.org/data/2.5/weather?q=${arr}&appid=a649f48c0d27ec05c0d86837b49029b1&units=metric`)
+					fetch(`https://api.openweathermap.org/data/2.5/weather?q=${arr}&appid=a649f48c0d27ec05c0d86837b49029b1&units=metric`)
 					.then(response => response.json())  
 					.then(data => {
 						var lat = data.coord.lat
@@ -96,7 +96,7 @@ function Jobs1() {
 	http.onreadystatechange = function() {
 		if(http.readyState == 4 && http.status == 200) {
 			var result = JSON.parse(http.responseText)
-			fetch(`http://api.openweathermap.org/data/2.5/weather?q=${loc}&appid=a649f48c0d27ec05c0d86837b49029b1&units=metric`)
+			fetch(`https://api.openweathermap.org/data/2.5/weather?q=${loc}&appid=a649f48c0d27ec05c0d86837b49029b1&units=metric`)
 			.then(response => response.json())  
 			.then(data => {
 				var lat = data.coord.lat
@@ -113,7 +113,7 @@ function Jobs1() {
 					var arr = str.split(',')	
 					arr = arr.splice(0,1)
 					console.log(arr)
-					fetch(`http://api.openweathermap.org/data/2.5/weather?q=${arr}&appid=a649f48c0d27ec05c0d86837b49029b1&units=metric`)
+					fetch(`https://api.openweathermap.org/data/2.5/weather?q=${arr}&appid=a649f48c0d27ec05c0d86837b49029b1&units=metric`)
 					.then(response => response.json())  
 					.then(data => {
 						var lat = data.coord.lat

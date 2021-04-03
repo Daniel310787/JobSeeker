@@ -38,7 +38,7 @@ function getCompany(){
         "desc": desc,
     }
     var json = JSON.stringify(users)
-    fetch('http://localhost:3000/users',{
+    fetch('https://localhost:3000/users',{
     method: "POST",
     headers: { 'Content-Type': 'application/json' },
     body: json

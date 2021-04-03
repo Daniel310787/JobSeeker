@@ -53,7 +53,7 @@ function mapLoc() {
     var arr = str.split(',');
     arr = arr.splice(0, arr.length - 1)
     console.log(arr.join(','))
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${arr}&appid=a649f48c0d27ec05c0d86837b49029b1&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${arr}&appid=a649f48c0d27ec05c0d86837b49029b1&units=metric`)
     .then(response => response.json())  
     .then(data =>{
         var lat = data.coord.lat

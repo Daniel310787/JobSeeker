@@ -95,10 +95,12 @@ body{
   background-color: #487EAF;
   color: white;
   padding: 55px 35px;
+  margin-left: 55px;
+  margin-right: 55px;
   margin-bottom: 30px;
   border-radius: 10px;
   height: 200px;
-  border: 10px solid #203647;
+  border: 5px solid #203647;
   
 }
 .cards:hover{
@@ -136,7 +138,7 @@ body{
 }
 #map{
   grid-area: map;
-  width: 730px;
+  width: 680px;
   height: 680px;
   display: flex;
   flex-direction: column;
@@ -150,6 +152,7 @@ body{
   top: 0;
   height: 100vh;
   box-sizing: border-box;
+  border: 5px solid #203647;
 }
 
 .footer {
